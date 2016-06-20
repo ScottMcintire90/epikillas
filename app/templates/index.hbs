@@ -1,21 +1,18 @@
-{{#each model.users as |user|}}
-  {{#link-to 'user' user.id user=user}}
-    {{user.name}}
-  {{/link-to}}
-{{/each}}
+<div class="container">
+  <br>
+  {{new-game saveGame="saveGame"}}
+  <br>
+  <button type="button" class="btn" name="button">Login</button>
+  <br>
+  <br>
 
+</div>
 
-{{#link-to 'adduser'}}Add a User{{/link-to}}
-
-{{new-game saveGame="saveGame"}}
-
-
-
-
+{{user-list games=model.games displayUser="displayUser"}}
 <hr>
 
 <ul>
-  {{#each model as |game|}}
+  {{#each model.games as |game|}}
     <li>{{game.name}}</li>
   {{/each}}
 </ul>
