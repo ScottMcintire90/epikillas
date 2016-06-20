@@ -1,3 +1,5 @@
-{{#each model as |user|}}
-  {{#link-to 'user' user.id}}{{user.name}}{{/link-to}}
+{{#each model.users as |user|}}
+  {{#link-to 'user' user.id user=user}}
+    {{user.name}}
+  {{/link-to}}
 {{/each}}
