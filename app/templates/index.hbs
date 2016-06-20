@@ -1,3 +1,4 @@
+
 <div class='page-header'>
     <h1>You must be signed in to use this app</h1>
 </div>
@@ -6,3 +7,9 @@
     <br>
     {{#link-to 'sign-in' class='list-group-item'}}Sign in{{/link-to}}
 </div>
+
+<ul>
+  {{#each model as |game|}}
+    <li>{{game.name}}</li>
+  {{/each}}
+</ul>
