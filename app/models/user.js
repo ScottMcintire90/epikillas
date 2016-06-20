@@ -9,5 +9,5 @@ export default Model.extend({
   avatar: attr(),
   game: belongsTo('game', {async: true}),
   target: attr(),
-  kills: attr()
+  kill: attr()
 });

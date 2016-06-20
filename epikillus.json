@@ -5,7 +5,7 @@
   "avatar": "https://avatars1.githubusercontent.com/u/16630547?v=3&s=460",
   "game": "EpiKillUs",
   "target": "Scott McIntire",
-  "kill": 0
+  "kill": "0"
 }, {
   "name": "Scott McIntire",
   "username": "ScottMcIntire90",
@@ -13,7 +13,7 @@
   "avatar": "https://avatars3.githubusercontent.com/u/16552162?v=3&s=460",
   "game": "EpiKillUs",
   "target": "Scott Holland Jr.",
-  "kill": 0
+  "kill": "0"
 }, {
   "name": "Sadio Ali",
   "username": "5adiyah",
@@ -21,7 +21,7 @@
   "avatar": "https://avatars0.githubusercontent.com/u/16658894?v=3&s=460",
   "game": "EpiKillUs",
   "target": "Kendra Dunham",
-  "kill": 0
+  "kill": "0"
 }, {
   "name": "Scott Holland Jr.",
   "username": "theAppanaut",
@@ -29,7 +29,7 @@
   "avatar": "https://avatars2.githubusercontent.com/u/14900449?v=3&s=460",
   "game": "EpiKillUs",
   "target": "Sadio Ali",
-  "kill": 0
+  "kill": "0"
 }],
 "games": [{
   "name": "Game 1",
