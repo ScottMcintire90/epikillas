@@ -5,9 +5,8 @@ export default Ember.Component.extend({
     displayUser() {
       var userList = this.model.get('user');
       var splitUsers = userList.split(",");
-      for (var i=0; i < splitUsers.length; ++i) {
-        console.log(splitUsers.pop());
-        return splitUsers.pop();
+      for (var i=0; i < splitUsers.length; i++) {
+        alert(splitUsers[i]);
       }
     }
   }
