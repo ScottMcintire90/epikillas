@@ -7,7 +7,7 @@ module.exports = function(environment) {
       authDomain: "epikillus.firebaseapp.com",
       databaseURL: "https://epikillus.firebaseio.com",
       storageBucket: "epikillus.appspot.com",
-    }
+    },
     modulePrefix: 'epikillus',
     environment: environment,
     baseURL: '/',
