@@ -8,11 +8,11 @@
 
 </div>
 
-{{user-list games=model.games displayUser="displayUser"}}
+
 <hr>
 
 <ul>
   {{#each model.games as |game|}}
-    <li>{{game.name}}</li>
+    {{#link-to 'game-detail' game.id}}<li>{{game.name}}</li>{{/link-to}}
   {{/each}}
 </ul>
