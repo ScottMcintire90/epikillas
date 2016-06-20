@@ -11,5 +11,6 @@ export default Model.extend({
   weapon: attr(),
   adminName: attr(),
   adminPassword: attr(),
-  users: hasMany('user', {async: true})
+  users: attr()
+  // users: hasMany('user', {async: true})
 });
