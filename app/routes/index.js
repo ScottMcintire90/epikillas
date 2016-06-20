@@ -6,6 +6,12 @@ export default Ember.Route.extend({
       users: this.store.findAll('user'),
       games: this.store.findAll('game')
     });
+  },
+  actions: {
+    saveGame(params){
+      var newGame = this.store.createRecord('game', params);
+      newGame.save();
+      this.transitionTo('index');
+    }
   }
-
 });
