@@ -2,6 +2,12 @@
 
 module.exports = function(environment) {
   var ENV = {
+    firebase: {
+      apiKey: "AIzaSyAp--kb16pL8rotQALlHQ_PZiSkouSlXPU",
+      authDomain: "epikillus.firebaseapp.com",
+      databaseURL: "https://epikillus.firebaseio.com",
+      storageBucket: "epikillus.appspot.com",
+    }
     modulePrefix: 'epikillus',
     environment: environment,
     baseURL: '/',
