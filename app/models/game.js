@@ -4,7 +4,6 @@ import attr from 'ember-data/attr';
 
 export default Model.extend({
   name: attr(),
-  users: attr(),
   organization: attr(),
   theme: attr(),
   rules: attr(),
