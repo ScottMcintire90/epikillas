@@ -1,4 +1,4 @@
-{ "game": [{
+{ "games": [{
     "name": "Game 1",
     "users": "",
     "organization": "Epicodus",
@@ -8,7 +8,7 @@
     "adminName": "Sims",
     "adminPassword": "sims1234"
   }, {
-    "name": "Game 1",
+    "name": "Game 2",
     "users": "",
     "organization": "Epicodus",
     "theme": "Coffee Deprived Programmers",
