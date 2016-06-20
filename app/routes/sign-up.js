@@ -13,16 +13,11 @@ export default Ember.Route.extend({
       var email = params.email;
       var password = params.password;
       const auth = this.get('firebaseApp').auth();
-      var self = this;
-      auth.createUserWithEmailAndPassword(email, password).then((userResponse) => {
-        debugger;
-        const user = self.store.createRecord('user', {
-          id: userResponse.uid,
-          email: userResponse.email
-        });
-        return user.save();
-      });
+      auth.createUserWithEmailAndPassword(email, password);
+      var user = this.store.createRecord('user', params);
+      user.save();
+      console.log(params);
+      this.transitionTo('index');
     }
-
   }
 });
