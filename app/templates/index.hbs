@@ -13,6 +13,6 @@
 
 <ul>
   {{#each model.games as |game|}}
-    {{#link-to 'game-detail' game.id}}<li>{{game.name}}</li>{{/link-to}}
+    {{#link-to 'game' game.id}}<li>{{game.name}}</li>{{/link-to}}
   {{/each}}
 </ul>

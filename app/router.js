@@ -9,7 +9,7 @@ Router.map(function() {
   this.route('login');
   this.route('user', {path: 'user/:user_id'});
   this.route('adduser');
-  this.route('game-detail', {path: 'game/:game_id'});
+  this.route('game', {path: 'game/:game_id'});
 });
 
 export default Router;
