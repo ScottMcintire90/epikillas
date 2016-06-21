@@ -10,7 +10,7 @@ session: Ember.inject.service(),
     signIn(params) {
       console.log(params);
        var self = this;
-
+       debugger;
        this.get('session').open('firebase', {
          provider: 'password',
          email: params.email,
