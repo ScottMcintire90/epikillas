@@ -4,12 +4,12 @@ import { hasMany } from 'ember-data/relationships';
 
 
 export default Model.extend({
-  user: attr(),
+  user: hasMany('user', {async: true}),
   name: attr(),
   organization: attr(),
   theme: attr(),
   rule: attr(),
   weapon: attr(),
   adminName: attr(),
-  adminPassword: attr(),
+  adminPassword: attr()
 });

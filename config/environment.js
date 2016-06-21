@@ -10,8 +10,16 @@ module.exports = function(environment) {
     },
     modulePrefix: 'epikillus',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    torii: { sessionServiceName: 'session' },
     baseURL: '/',
     locationType: 'auto',
+    firebase: {
+      apiKey: "AIzaSyAp--kb16pL8rotQALlHQ_PZiSkouSlXPU",
+      authDomain: "epikillus.firebaseapp.com",
+      databaseURL: "https://epikillus.firebaseio.com",
+      storageBucket: "epikillus.appspot.com",
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
