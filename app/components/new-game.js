@@ -10,6 +10,7 @@ export default Ember.Component.extend({
 
     saveGame(){
       var params = {
+        user: this.get('user'),
         name: this.get('name'),
         organization: this.get('organization'),
         theme: this.get('theme'),
@@ -17,10 +18,11 @@ export default Ember.Component.extend({
         weapon: this.get('weapon'),
         adminName: this.get('adminName'),
         adminPassword: this.get('adminPassword'),
-        user: this.get('user'),
-      }
+      };
+      // var users = this.get('user');
+
       this.set('addNewGame', false);
-      this.sendAction('saveGame', params);
+      // this.sendAction('saveGame', params, users);
       this.set("name", "");
       this.set("organization", "");
       this.set("rule", "");

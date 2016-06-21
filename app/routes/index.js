@@ -8,9 +8,15 @@ export default Ember.Route.extend({
     });
   },
   actions: {
-    saveGame(params){
+    saveGame(params, users){
       var newGame = this.store.createRecord('game', params);
       newGame.save();
+
+      // users.split(",").forEach(function(theName) {
+      //   var userParams = {name: theName, username: "", password: ""};
+      //   newGame.users.addObject(userParams); // pseudocode
+      // });
+
       this.transitionTo('index');
     }
   }

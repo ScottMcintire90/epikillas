@@ -1,10 +1,14 @@
+<!--
+  <button type="button" class="btn" name="button">Test User Display Thingy</button> -->
 
-  <button {{action 'displayUser'}} type="button" class="btn" name="button">Test User Display Thingy</button>
+  <p>{{model.user}}</p>
+<!--
+  <ul>
+    <li id="printHere"></li>
+  </ul>
 
-  <p>{{model.user}} model.user</p>
-
-<ul>
-{{#each user in model.user}}
-  <li>{{user.name}}</li>
-{{/each}}
-</ul>
+  <ul>
+  {{#each user in model.user}}
+    <li>{{#link-to 'user' user.id}}{{user.name}}{{/link-to}}</li>
+  {{/each}}
+  </ul> -->
