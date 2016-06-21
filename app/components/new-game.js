@@ -19,10 +19,10 @@ export default Ember.Component.extend({
         adminName: this.get('adminName'),
         adminPassword: this.get('adminPassword'),
       };
-      // var users = this.get('user');
+      var users = this.get('user');
 
       this.set('addNewGame', false);
-      // this.sendAction('saveGame', params, users);
+      this.sendAction('saveGame', params, users);
       this.set("name", "");
       this.set("organization", "");
       this.set("rule", "");

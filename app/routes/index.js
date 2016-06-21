@@ -9,7 +9,7 @@ export default Ember.Route.extend({
   },
   actions: {
     saveGame(params, users){
-      var newGame = this.store.createRecord('game', params);
+      var newGame = this.store.createRecord('game', params, users);
       newGame.save();
 
       // users.split(",").forEach(function(theName) {
