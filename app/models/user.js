@@ -3,11 +3,11 @@ import attr from 'ember-data/attr';
 import { belongsTo } from 'ember-data/relationships';
 
 export default Model.extend({
-  // name: attr(),
+  name: attr(),
   email: attr(),
   password: attr(),
-  // avatar: attr(),
-  // game: belongsTo('game', {async: true}),
-  // target: attr(),
-  // kill: attr()
+  avatar: attr(),
+  game: belongsTo('game', {async: true}),
+  target: attr(),
+  kill: attr()
 });

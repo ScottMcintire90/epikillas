@@ -1,0 +1,59 @@
+{{#if addNewGame}}
+  <div class="row container">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          {{input value=name id="name"}}
+          <label for="name">Game Name</label>
+        </div>
+        <div class="input-field col s6">
+          {{input value=organization id="organization"}}
+          <label for="organization">Organization</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          {{input value=weapon id="weapon"}}
+          <label for="weapon">Game Weapon</label>
+        </div>
+        <div class="col s6">
+          <label for="theme">Game Theme</label>
+          {{#x-select value=theme id="theme"}}
+            {{#x-option value="ninjas"}}Ninjas{{/x-option}}
+            {{#x-option value="zombies"}}Zombies{{/x-option}}
+            {{#x-option value="programmers"}}Angry programmers{{/x-option}}
+            {{#x-option value="rogue"}}Rogue{{/x-option}}
+            {{#x-option value="robots"}}Robots{{/x-option}}
+          {{/x-select}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          {{input value=adminName id="adminName"}}
+          <label for="adminName">Admin User Name:</label>
+        </div>
+        <div class="input-field col s6">
+          {{input value=adminPassword id="adminPassword"}}
+          <label for="adminPassword">Admin Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          {{textarea class="materialize-textarea" value=user id="user"}}
+          <label for="users">Users: (Please enter in Users' first and last name seperated by commas)</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          {{textarea class="materialize-textarea" value=rule id="rule"}}
+          <label for="rules">Rules:</label>
+        </div>
+      </div>
+
+      <button class="btn" {{action 'saveGame'}}>Save</button>
+    </form>
+  </div>
+
+{{else}}
+  <button class="btn" {{action 'gameFormShow'}}>New Game</button>
+{{/if}}

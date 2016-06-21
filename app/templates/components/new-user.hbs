@@ -1,0 +1,15 @@
+<form>
+  <label for="name">Your Full Name: </label>
+  {{input value=name id="name"}}
+
+  <label for="username">Pick a Username: </label>
+  {{input value=username id="username"}}
+
+  <label for="password"> Pick a Password: </label>
+  {{input value=password id="password" type=password}}
+
+  <label for="avatar">Choose an Avatar: </label>
+  {{input value=avatar id="avatar"}}
+
+  <button {{action 'save'}}>button</button>
+</form>

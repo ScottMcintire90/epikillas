@@ -1,0 +1,10 @@
+
+  <button {{action 'displayUser'}} type="button" class="btn" name="button">Test User Display Thingy</button>
+
+  <p>{{model.user}} model.user</p>
+
+<ul>
+{{#each user in model.user}}
+  <li>{{user.name}}</li>
+{{/each}}
+</ul>

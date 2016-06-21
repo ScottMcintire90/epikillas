@@ -8,9 +8,9 @@ export default Ember.Route.extend({
     });
   },
   actions: {
-    saveGame(params){
-      var newGame = this.store.createRecord('game', params);
-      newGame.save();
+    save(params) {
+      var newUser = this.store.createRecord('user', params);
+      newUser.save();
       this.transitionTo('index');
     }
   }

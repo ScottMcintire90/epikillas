@@ -11,5 +11,5 @@ export default Model.extend({
   rule: attr(),
   weapon: attr(),
   adminName: attr(),
-  adminPassword: attr(),
+  adminPassword: attr()
 });
